@@ -129,7 +129,7 @@ htmlScore = Number(htmlScore);
 
 examScore = htmlScore + cssScore + javascriptScore;
 
-if (examScore !== Number) {
+if (!Number.isFinite(examScore)) {
   console.log("Invalid Score!");
 } else {
   console.log(examScore);
